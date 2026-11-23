@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bài hát CĐ</title>
+<!-- Trang boc: chi de dien thoai luu ra man hinh co logo ca doan; noi dung that la web Apps Script nhung ben trong -->
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bài hát CĐ">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#000000">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; }
+  body { padding-top: env(safe-area-inset-top); box-sizing: border-box; }
+  iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+  .cho { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+         color: #d9853b; font: 15px -apple-system, system-ui, sans-serif; pointer-events: none; }
+</style>
+</head>
+<body>
+<div class="cho" id="cho">Đang tải bài hát…</div>
+<iframe src="https://script.google.com/macros/s/AKfycbyFcaO41NQsyfZOGOJiy5im140PzI9Rpejcu4NMKKsIDwECDxNgeyx0xfuQdAMHRMoK/exec"
+        title="Ca đoàn · Bài hát" allow="autoplay; fullscreen"
+        onload="document.getElementById('cho').remove()"></iframe>
+</body>
+</html>
